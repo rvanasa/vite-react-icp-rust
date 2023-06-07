@@ -17,6 +17,7 @@ tasks:
 
 vscode:
   extensions:
+    - rust-lang.rust-analyzer
     - dfinity-foundation.vscode-motoko
 
 ports:
