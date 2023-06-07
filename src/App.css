@@ -32,17 +32,8 @@
   }
 }
 
-.logo.motoko:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-.logo-stack {
-  display: inline-grid;
-}
-
-.logo-stack > * {
-  grid-column: 1;
-  grid-row: 1;
+.logo.rust:hover {
+  filter: drop-shadow(0 0 2em #ce412b77);
 }
 
 @keyframes logo-swim {
@@ -58,7 +49,7 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .logo.motoko {
+  .logo.rust {
     animation: logo-swim 5s ease-in-out infinite;
   }
 }

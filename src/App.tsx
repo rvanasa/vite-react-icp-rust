@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-import motokoLogo from './assets/motoko_moving.png';
-import motokoShadowLogo from './assets/motoko_shadow.png';
+import rustLogo from './assets/rust.svg';
 import reactLogo from './assets/react.svg';
 import { backend } from './declarations/backend';
 
@@ -48,30 +47,23 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
         <a
-          href="https://internetcomputer.org/docs/current/developer-docs/build/cdks/motoko-dfinity/motoko/"
+          href="https://internetcomputer.org/docs/current/developer-docs/backend/rust/"
           target="_blank"
         >
-          <span className="logo-stack">
-            <img
-              src={motokoShadowLogo}
-              className="logo motoko-shadow"
-              alt="Motoko logo"
-            />
-            <img src={motokoLogo} className="logo motoko" alt="Motoko logo" />
-          </span>
+          <img src={rustLogo} className="logo rust" alt="Rust logo" />
         </a>
       </div>
-      <h1>Vite + React + Motoko</h1>
+      <h1>Vite + React + IC (Rust)</h1>
       <div className="card">
         <button onClick={increment} style={{ opacity: loading ? 0.5 : 1 }}>
           count is {count}
         </button>
         <p>
-          Edit <code>backend/Backend.mo</code> and save to test HMR
+          Edit <code>backend/src/lib.mo</code> and save to test HMR
         </p>
       </div>
       <p className="read-the-docs">
-        Click on the Vite, React, and Motoko logos to learn more
+        Click on the Vite, React, and Rust logos to learn more
       </p>
     </div>
   );
