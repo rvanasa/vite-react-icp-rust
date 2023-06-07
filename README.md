@@ -1,9 +1,5 @@
 # Vite + React + IC (Rust)
 
-### Get started directly in your browser:
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/rvanasa/vite-react-ic-rust)
-
 This project template gives you everything you need to build a Web3 application on the [Internet Computer](https://internetcomputer.org/).
 
 Check out [Vite + React + Motoko](https://github.com/rvanasa/vite-react-motoko) for a beginner-friendly starter project with a [Motoko](https://internetcomputer.org/docs/current/motoko/main/motoko) backend. 
@@ -53,3 +49,9 @@ When ready, run `dfx deploy` to build and deploy your application.
 - Customize your project's code style by editing the `.prettierrc` file and then running `npm run format`.
 - Reduce the latency of update calls by passing the `--emulator` flag to `dfx start`.
 - Split your frontend and backend console output by running `npm run frontend` and `npm run backend` in separate terminals.
+
+## Run in your Browser
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/rvanasa/vite-react-ic-rust)
+
+For a considerably faster setup time, check out the [Vite + React + Motoko](https://internetcomputer.org/docs/current/motoko/main/motoko) starter project.
