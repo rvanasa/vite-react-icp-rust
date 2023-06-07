@@ -43,8 +43,10 @@ name = "backend"
 version = "0.0.0"
 dependencies = [
  "candid",
- "ic-cdk",
+ "ic-cdk 0.8.1",
  "ic-cdk-macros",
+ "ic-stable-memory",
+ "serde",
 ]
 
 [[package]]
@@ -341,6 +343,19 @@ checksum = "7f24254aa9a54b5c858eaee2f5bccdb46aaf0e486a595ed5fd8f86ba55232a70"
 
 [[package]]
 name = "ic-cdk"
+version = "0.7.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9beb0bf1dcd0639c313630e34aa547a2b19450ddf1969c176e13225ef3b29048"
+dependencies = [
+ "candid",
+ "ic-cdk-macros",
+ "ic0",
+ "serde",
+ "serde_bytes",
+]
+
+[[package]]
+name = "ic-cdk"
 version = "0.8.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1faa7b42964694fb38d7f62172e0d8261381e39ce85b4d6b519929f7cad9b4fb"
@@ -363,6 +378,33 @@ dependencies = [
  "quote",
  "serde",
  "serde_tokenstream",
+ "syn 1.0.109",
+]
+
+[[package]]
+name = "ic-stable-memory"
+version = "0.4.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e35aaf578cae9f1c3f0d50742099bda5e5ee1f3c2cb29315233d0852cfc6067f"
+dependencies = [
+ "candid",
+ "ic-cdk 0.7.4",
+ "ic-stable-memory-derive",
+ "num-bigint",
+ "serde",
+ "serde_bytes",
+ "sha2",
+ "zwohash",
+]
+
+[[package]]
+name = "ic-stable-memory-derive"
+version = "0.4.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6fdb3a4f5e97e0d9a05fa6096214888c98ad405586c338fb99a7a6f608c7fee3"
+dependencies = [
+ "proc-macro2",
+ "quote",
  "syn 1.0.109",
 ]
 
@@ -1059,3 +1101,9 @@ checksum = "61de7bac303dc551fe038e2b3cef0f571087a47571ea6e79a87692ac99b99699"
 dependencies = [
  "memchr",
 ]
+
+[[package]]
+name = "zwohash"
+version = "0.1.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "beaf63e0740cea93ca85de39611a8bc8262a50adacd6321cd209a123676d0447"
