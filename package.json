@@ -9,7 +9,7 @@
     "frontend": "vite --port 3000",
     "backend": "cargo-watch -q -C ./backend -s 'cd .. && dfx generate && dfx deploy backend -q'",
     "build": "tsc && vite build",
-    "format": "prettier --write \"src/**/*.{json,js,jsx,ts,tsx,css,scss}\" \"backend/**/*.mo\"",
+    "format": "prettier --write \"src/**/*.{json,js,jsx,ts,tsx,css,scss}\" && cargo fmt",
     "sources": "mops sources"
   },
   "dependencies": {

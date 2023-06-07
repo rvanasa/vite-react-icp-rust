@@ -15,6 +15,6 @@ fn inc() {
 }
 
 #[ic_cdk_macros::update]
-fn set(value: u32){
+fn set(value: u32) {
     COUNTER.with(|counter| *counter.borrow_mut() = value)
 }
