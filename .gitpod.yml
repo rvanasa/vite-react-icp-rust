@@ -6,6 +6,8 @@ tasks:
       echo 'export PATH="$HOME/bin:$PATH"' >> ~/.bashrc
       sudo apt-get install -q -y libunwind-dev
       sh -ci "$(curl -fsSL https://internetcomputer.org/install.sh)"
+      rustup target add wasm32-unknown-unknown
+      cargo install cargo-watch
       dfx start --background --emulator --clean
       npm run setup
     init: |
