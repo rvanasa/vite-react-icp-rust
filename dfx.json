@@ -13,10 +13,5 @@
       },
       "source": ["dist/"]
     }
-  },
-  "defaults": {
-    "build": {
-      "packtool": "npm run --silent sources"
-    }
   }
 }
