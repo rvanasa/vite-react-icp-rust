@@ -1,4 +1,4 @@
-# Vite + React + IC (Rust)
+# Vite + React + ICP (Rust)
 
 This project template gives you everything you need to build a Web3 application on the [Internet Computer](https://internetcomputer.org/).
 
