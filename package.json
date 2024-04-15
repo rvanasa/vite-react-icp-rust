@@ -7,7 +7,7 @@
     "setup": "npm i && dfx canister create backend && dfx generate backend && dfx deploy",
     "start": "run-p frontend backend",
     "frontend": "vite --port 3000",
-    "backend": "cargo-watch -q -C ./backend -s 'cd .. && dfx generate && dfx deploy backend -q -y'",
+    "backend": "cargo-watch -w 'src' -q -C ./backend -s 'cd .. && dfx generate && dfx deploy backend -q -y'",
     "build": "tsc && vite build",
     "format": "prettier --write \"src/**/*.{json,js,jsx,ts,tsx,css,scss}\" && cargo fmt"
   },
