@@ -9,7 +9,7 @@ tasks:
       source "$HOME/.local/share/dfx/env"
       rustup target add wasm32-unknown-unknown
       cargo install cargo-watch
-      dfx start --background --emulator --clean
+      dfx start --background --clean
       npm run setup
     init: |
       npm start
